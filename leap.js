@@ -1,11 +1,7 @@
-let year = 1946;
+let year = 2020;
 
-if (year % 400 == 0) {
+if (year % 400 == 0 || year % 4 == 0 || year % 100 == 1) {
     console.log('It is a leap year.');
-} else if (year % 100 == 0) {
-    console.log('It is definitely not a leap year.');
-} else if (year % 4 == 0) {
-    console.log('It is definitely a leap year.');
 } else {
     console.log('It is not a leap year.');
 }
